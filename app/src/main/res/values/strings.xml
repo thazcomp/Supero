@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Repo Reader</string>
+    <string name="license">License:</string>
+    <string name="watchers">Watchers:</string>
+    <string name="forks">Forks:</string>
+    <string name="opened_issues">Opened Issues:</string>
+    <string name="none">None</string>
+    <string name="leitor_de_reposit_rios_java_do_github">Leitor de Repositórios Java do GitHub</string>
+    <string name="score">Score</string>
 </resources>

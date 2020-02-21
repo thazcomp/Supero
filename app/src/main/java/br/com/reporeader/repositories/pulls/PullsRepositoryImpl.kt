@@ -1,15 +1,16 @@
-package br.com.reporeader.repositories.main
+package br.com.reporeader.repositories.pulls
 
+import br.com.reporeader.data.responses.PullsResponse
 import br.com.reporeader.data.responses.RepositoriesResponse
 import br.com.reporeader.network.RetrofitInitializer
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 
-class MainRepositoryImpl: MainRepository {
+class PullsRepositoryImpl: PullsRepository {
 
-    override fun getRepositories(page:Int): Observable<RepositoriesResponse> {
-        return RetrofitInitializer().createInterceptor().getRepo(page)
+    override fun getPulls(owner:String, repo:String): Observable<ArrayList<PullsResponse>> {
+        return RetrofitInitializer().createInterceptor().getPulls(owner, repo)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
     }

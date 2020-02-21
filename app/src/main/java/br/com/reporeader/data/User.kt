@@ -2,7 +2,7 @@ package br.com.reporeader.data
 
 import com.google.gson.annotations.SerializedName
 
-data class Owner (
+data class User (
     @SerializedName("login")
     val login:String?,
 

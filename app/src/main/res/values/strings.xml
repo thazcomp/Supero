@@ -5,6 +5,9 @@
     <string name="forks">Forks:</string>
     <string name="opened_issues">Opened Issues:</string>
     <string name="none">None</string>
-    <string name="leitor_de_reposit_rios_java_do_github">Leitor de Repositórios Java do GitHub</string>
+    <string name="leitor_de_reposit_rios_java_do_github">GitHub Java Repository Reader</string>
     <string name="score">Score</string>
+    <string name="privat">Private</string>
+    <string name="publi">Public</string>
+    <string name="pulls">Pulls:</string>
 </resources>

@@ -10,7 +10,7 @@ class MainViewModel :ViewModel(){
 
     private var mRepository: MainRepository = MainRepositoryImpl()
 
-    fun getRepositories(): Observable<RepositoriesResponse> {
-        return mRepository.getRepositories()
+    fun getRepositories(page:Int): Observable<RepositoriesResponse> {
+        return mRepository.getRepositories(page)
     }
 }

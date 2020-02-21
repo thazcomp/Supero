@@ -4,5 +4,5 @@ import br.com.reporeader.data.responses.RepositoriesResponse
 import io.reactivex.Observable
 
 interface MainRepository {
-    fun getRepositories(): Observable<RepositoriesResponse>
+    fun getRepositories(page:Int): Observable<RepositoriesResponse>
 }
